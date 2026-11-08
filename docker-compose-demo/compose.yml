@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx
+    container_name: compose-web
+
+    ports:
+      - "8096:80"
+
+    restart: unless-stopped
